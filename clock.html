@@ -1,0 +1,57 @@
+<html>
+<head>
+    
+    <title>DIGITAL CLOCK</title>
+    <link rel="stylesheet" type="text/css" href="css/clock2.css">
+    <style>
+        body{
+            background-image:url(img/time.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        #clock
+        {
+            font-size: 50px;
+        }
+    
+    </style>
+    </head>
+<body>
+    <div id="shadowBox">
+    <h3 class="rainbow rainbow_text_animated">DIGITAL CLOCK</h3>
+</div>
+    <div id="clock">05:10:20</div>
+    <script type="text/javascript">
+        
+        function showtime(){
+            var time=new Date();
+            var hr=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            var am_pm="AM";
+            if(hr>12){
+                hr-=12;
+                am_pm="PM";
+            }
+            if(hr==0){
+                hr=12;
+            }
+            hr=(hr<10)?"0"+hr:hr;
+            min=(min<10)?"0"+min:min;
+            sec=(sec<10)?"0"+sec:sec;
+            var currentTime=hr+":"+min+":"+sec+am_pm;
+            document.getElementById("clock").innerHTML=currentTime;
+            setTimeout(showtime,1000);
+        }
+    showtime();
+    
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    </body>
+</html>

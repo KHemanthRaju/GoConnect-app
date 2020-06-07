@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>CALCULATOR</title>
+    <style>
+    table{
+    border-style:none;
+    border-width:1px;
+        border-color: blue;}
+    td{
+        font-size:50px;
+        border-spacing: inherit;}
+    .button
+        {
+            background-color: whitesmoke;
+            color:black;
+            font-size: 60;
+        background-color:aliceblue}
+    
+    </style>
+    </head>
+<body style="background-color:white;">
+    <center>
+    <table border="1" cellspacing="0" cellpadding="20" width="20%" height="75%">
+         <tr height="25%">
+             <td colspan="4" id="inputLabel">0           </td></tr>
+    <tr style="color:white;text-align:center">
+        <td>
+            <button class="button" onclick="pushBtn(this);">7</button></td>
+        <td><button class="button" onclick="pushBtn(this);">8</button></td>
+        <td><button class="button"onclick="pushBtn(this);">9</button></td>
+        <td style="color:blue"><button class="button"onclick="pushBtn(this);">/</button></td>
+        
+        </tr>
+    <tr style="color:white;text-align:center">
+        <td><button class="button" onclick="pushBtn(this);">4</button></td>
+        <td><button class="button" onclick="pushBtn(this);">5</button></td>
+        <td><button class="button" onclick="pushBtn(this);">6</button></td>
+        <td style="color:blue"><button class="button"onclick="pushBtn(this);">*</button></td>
+        </tr>
+     <tr style="color:white;text-align:center">
+        <td><button class="button"onclick="pushBtn(this);">1</button></td>
+        <td><button class="button" onclick="pushBtn(this);">2</button></td>
+        <td><button class="button" v onclick="pushBtn(this);">3</button></td>
+         <td style="color:blue"><button class="button"onclick="pushBtn(this);">C</button></td>
+    </tr>
+         <tr style="color:white;text-align:center">
+        <td><button class="button" onclick="pushBtn(this);">0</button></td>
+        <td><button class="button"onclick="pushBtn(this);">.</button></td>
+        <td><button class="button"onclick="pushBtn(this);">=</button></td>
+             <td style="color:blue"><button class="button"onclick="pushBtn(this);">+</button></td>
+             
+    </tr>
+    </table>
+        </center>
+    <script type="text/javascript"
+            src="js/calcy.js"></script>
+    </body></html>
