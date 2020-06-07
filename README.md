@@ -8,7 +8,8 @@
 	<li>Facebook Login page</li>
 	<li>Instragram Login page</li>
 	<li>Twitter Login page</li>
-	<li>Amazon shopping page</li></ol>
+	<li>Amazon shopping page</li>
+	<li>Geolocation</li></ol>
 	<p>Fist page: This page is the main page where you have options to login, About the Developer,About the app</p>
 	<p>Second Page: Index is the Login page where you have to enter your details in the respective fields</p>
 	<p>Third page: This page contains the options mentioned above</p>
